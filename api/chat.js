@@ -19,7 +19,7 @@ export default async function handler(req, res) {
 
     const genAI = new GoogleGenerativeAI(apiKey);
     const model = genAI.getGenerativeModel({ 
-      model: 'gemini-1.5-flash',
+      model: 'models/gemini-3.5-flash-lite',
       systemInstruction: 'Eres GonStudy AI, un asistente de estudio virtual e interactivo en español diseñado para ayudar a Gonzalo Davanzo y sus compañeros a repasar materias de secundaria, resolver cuestionarios, resúmenes, exámenes de Verdadero o Falso y Multiple Choice.'
     });
 
